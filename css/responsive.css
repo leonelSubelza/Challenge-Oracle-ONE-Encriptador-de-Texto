@@ -1,0 +1,116 @@
+
+@media screen and (max-width: 768px) and (min-width: 376px) {
+    body{
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .main-container{
+        flex-direction: column;
+        width: 90%;
+        width: 100%;
+        height: 95%;
+    }
+
+    .ingreso-texto-contenedor{
+        width: 100%;
+        min-height: 80%;
+        margin: 0;
+    }
+
+    .mensaje-encriptado-contenedor{
+        max-width: 90%;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .mensaje-encriptado-tipo-uno_imagen{
+        display: none;
+    }
+    
+    .mensaje-encriptado-tipo-uno{
+        height: 100px;
+        margin:auto;
+    }
+
+    .mensaje-encriptado-tipo-uno_info{
+        margin:auto;
+    }
+
+    .mensaje-encriptado-tipo-dos{
+        height: auto;
+    }
+    .mensaje-encriptado-tipo-dos_texto{
+        height: auto;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 376px){
+    body{
+        flex-direction: column;
+        margin: 0 5%;
+    }
+
+    .main-container{
+        flex-direction: column;
+        margin: 15% 0 0 0;
+        width: 100%;
+        height: 95%;
+    }
+
+    .ingreso-texto-contenedor{
+        width: 100%;
+        min-height: 75%;
+        margin: 0;
+    }
+
+    .texto-ingreso{
+        height: 60%;
+    }
+
+    .texto-ingreso-info-contenedor{
+        height: 40%;
+    }
+
+    .texto-ingreso-info_botones{
+        height: 70%;        
+    flex-direction: column;
+    }
+
+    .boton-encriptar,.boton-desencriptar{
+        width: 90%;
+        
+        margin: 5px auto;
+    }
+
+    .mensaje-encriptado-contenedor{
+        max-width: 90%;
+        width: 90%;
+        height: auto;
+        margin:0 auto;
+    }
+
+    .mensaje-encriptado-tipo-uno_imagen{
+        display: none;
+    }
+
+
+    .mensaje-encriptado-tipo-uno{
+        height: 100px;
+        margin:auto;
+    }
+
+    .mensaje-encriptado-tipo-uno_info{
+        margin:auto;
+    }
+
+    .mensaje-encriptado-tipo-dos{
+        height: auto;
+    }
+    .mensaje-encriptado-tipo-dos_texto{
+        height: auto;
+        padding: 5%;
+    }
+}

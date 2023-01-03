@@ -1,0 +1,254 @@
+*{
+    box-sizing: border-box;
+    max-width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 100%;
+    /*Hace que los items ocupen todo el alto restante*/
+    align-items: stretch; 
+    
+    background-color: #F3F5FC;
+}
+
+.logo-alura{
+    width: 10%;  
+}
+
+.logo-alura-img{
+    width: 31px;
+    height: 48px;
+    margin: 25% 40%;
+}
+
+.main-container{
+    width: 90%;
+    display: flex;
+}
+
+.ingreso-texto-contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    /*height: 80%;*/
+    min-height: 80%;
+    margin:5% 5% 0 0;
+}
+
+.texto-ingreso{
+    width: 100%;
+    height: 80%;
+    position: relative;
+}
+
+.texto-ingreso_input-error{
+    border: 1px solid red !important;
+}
+
+.texto-ingreso-info-error{
+    filter: invert(15%) sepia(93%) saturate(5853%) hue-rotate(357deg) brightness(86%) contrast(117%);
+}
+
+.cancel-icon{
+    width: 20px;
+    height: 20px;
+    right: 1%;
+    top: 1%;
+    position: absolute;
+    display: none;
+}
+.cancel-icon-active{
+    display: block;
+}
+
+.texto-ingreso_input{
+    border:transparent;
+    background: transparent;
+    width: 95%;
+    height: 100%;
+    resize: none;
+    text-align: start;
+    color:#0A3871;
+    font-size: 32px;
+    font-family: 'Inter';
+    line-height: 48px;
+}
+
+.texto-ingreso_input::placeholder{
+    color:#0A3871;
+}
+
+.texto-ingreso_input:focus{
+    outline: none;
+}
+
+.texto-ingreso-info-contenedor{
+    height: 20%;
+    margin-top: auto;
+}
+
+.texto-ingreso-info{
+    height: 20%;
+    display:flex;
+}
+
+.info-texto-ingreso_texto{
+    margin: auto 0;
+}
+
+.icon-exclamation{
+    width:16px;
+    height:16px;
+    margin: auto 2px;
+}
+
+.texto-ingreso-info_botones{
+    width: 100%;
+    height: 60%;
+    display: flex;
+}
+
+.boton-encriptar,.boton-desencriptar{
+    text-align: center;
+    border-radius: 24px;
+    width: 45%;
+    height: 67px;
+    margin:auto;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    color:#fff;    
+}
+.boton-encriptar:hover, .boton-desencriptar:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+.boton-desencriptar{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.mensaje-encriptado-contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    max-width: 25%;
+    min-width: 25%;
+    margin: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+.mensaje-encriptado-tipo-uno{    
+    flex-direction: column;
+    display: none;
+    margin:auto;
+    width: 90%;
+}
+
+.mensaje-encriptado-tipo-uno-active{
+    display: flex;
+}
+
+.mensaje-encriptado-tipo-uno_info-titulo,.mensaje-encriptado-tipo-uno_info-parrafo{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.mensaje-encriptado-tipo-uno_info-titulo{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje-encriptado-tipo-uno_info-parrafo{
+    font-weight: 400;
+    font-size: 16px;       
+    text-align: center;    
+    color: #495057;
+}
+
+.mensaje-encriptado-tipo-uno_info{
+    text-align: center;
+}
+
+.mensaje-encriptado-tipo-dos{
+    flex-direction: column;
+    margin:auto;
+    height: 95%;
+    width: 80%;
+    display: none;
+}
+
+.mensaje-encriptado-tipo-dos-active{
+    display: flex;
+}
+
+.mensaje-encriptado-tipo-dos_texto{
+    height: 90%;
+    max-width: 90%;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+    user-select: none;
+}
+
+.boton-copiar{
+    width: 80%;
+    height: 67px;
+    margin: 5px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    text-align: center;
+    border: 1px solid #0A3871;
+
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* Dark blue/dark-blue-300 */
+
+color: #0A3871;
+}
+
+.boton-copiar:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+
+.ventana-copiado{
+    background-color: rgba(61, 61, 61, 0.937);
+    color:white;
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    margin: 0 auto;    
+    width: 150px;
+    max-width: 50%;
+    height: 40px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity .2s;
+    user-select: none;   
+}
+
+.ventana-copiado-active{
+    opacity: 1;
+    transition: opacity .2s;
+}
+.ventana-copiado p{
+    text-align: center;
+    padding: 5%;
+}

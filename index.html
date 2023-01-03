@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <!--<link rel="icon" href="https://www.aluracursos.com/assets/favicon.1647533644.ico" />-->
+    <title>Encriptador de Texto</title>
+  </head>
+  <body>
+
+    <header class="logo-alura" id="logo-alura">
+      <img class="logo-alura-img" id="logo-alura-img" src="./imagenes/Vector.png" />
+    </header>
+    
+    <main class="main-container">
+      <div class="ingreso-texto-contenedor" id="ingreso-texto-contenedor">
+        
+        <div class="texto-ingreso">
+          <img class="cancel-icon" id="cancel-icon" src="./imagenes/cancel.png">
+          <textarea class="texto-ingreso_input" id="texto-ingreso_input" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <div class="texto-ingreso-info-contenedor" id="info-texto-ingreso-contenedor">
+            <div class="texto-ingreso-info" id="texto-ingreso-info">
+              <img class="icon-exclamation"  id="icon-exclamation" src="./imagenes/danger-sign.png" />
+              <p class="info-texto-ingreso_texto" id="info-texto-ingreso_texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+            
+            <div id="texto-ingreso-info_botones" class="texto-ingreso-info_botones">
+              <button id="boton-encriptar" class="boton-encriptar" autofocus>Encriptar</button>
+              <button id="boton-desencriptar" class="boton-desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+      </div>
+
+    <div id="mensaje-encriptado-contenedor" class="mensaje-encriptado-contenedor">
+
+      <div class="mensaje-encriptado-tipo-uno mensaje-encriptado-tipo-uno-active" id="mensaje-encriptado-tipo-uno">
+        <img class="mensaje-encriptado-tipo-uno_imagen" id="mensaje-encriptado-tipo-uno_imagen" src="./imagenes/Muñeco.png"/>
+        <div class="mensaje-encriptado-tipo-uno_info" id="Mensaje-encriptado-tipo-uno_info">
+          <h1 class="mensaje-encriptado-tipo-uno_info-titulo" id="mensaje-encriptado-tipo-uno_info-titulo">
+            Ningún mensaje fue encontrado
+          </h1>
+          <p id="mensaje-encriptado-tipo-uno_info-parrafo" class="mensaje-encriptado-tipo-uno_info-parrafo">
+            Ingresa el texto que desees encriptar o desencriptar
+          </p>
+        </div>
+      </div>
+
+      <div class="mensaje-encriptado-tipo-dos" id="mensaje-encriptado-tipo-dos">
+        <p class="mensaje-encriptado-tipo-dos_texto" id="mensaje-encriptado-tipo-dos_texto"></p>
+        <button id="boton-copiar" class="boton-copiar" >Copiar</button>          
+      </div>
+    </div>
+    <section class="ventana-copiado" id="ventana-copiado">
+      <p>Copiado!</p>
+    </section>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
