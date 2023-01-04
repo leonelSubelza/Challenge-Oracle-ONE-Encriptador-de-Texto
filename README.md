@@ -1,6 +1,6 @@
 # Challenge-Oracle-ONE-Encriptador de Texto
 
-> Proyecto realizado para el Challenge ONE de Lógica de programación, el cual consiste en un sistema que dado un texto ingresado por el usuario, éste podrá encriptar y desencriptarlo dadas unas reglas de encriptación.
+> Proyecto realizado para el Challenge ONE de Lógica de programación del curso de Alura, el cual consiste en construir un sistema que permita encriptar y desencriptar un texto escrito por el usuario, siguiendo unas reglas de encriptación proporcionadas por el enunciado del desafío.
 Tencnologías utilizadas: JavaScript, HTML5, CSS3.
 
 #### :link: Enlace del [proyecto](https://leonelsubelza.github.io/Challenge-Oracle-ONE-Encriptador-de-Texto/)
